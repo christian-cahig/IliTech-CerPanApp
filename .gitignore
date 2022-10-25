@@ -4,9 +4,6 @@
 # VS Code files
 .vscode/
 
-# PDFs
-/**/*.pdf
-
 # Auxiliary files
 /**/*.aux
 /**/*.auxlock
