@@ -1,0 +1,39 @@
+# For MacOS
+**/.DS_Store
+
+# VS Code files
+.vscode/
+
+# PDFs
+/**/*.pdf
+
+# Auxiliary files
+/**/*.aux
+/**/*.auxlock
+/**/*.bbl
+/**/*.bcf
+/**/*.blg
+/**/*.dpth
+/**/*.dvi
+/**/*.loa
+/**/*.lof
+/**/*.log
+/**/*.lot
+/**/*.md5
+/**/*.nav
+/**/*.out
+/**/*.ps
+/**/*.snm
+/**/*.toc
+/**/*.top
+/**/*.tui
+/**/*.xml
+/**/*.synctex.gz
+/**/*.synctex(busy)
+/**/*.bib.bak
+/**/*.bib.sav
+/**/*.bib.sav.tmp
+/**/*.fdb_latexmk
+/**/*.fls
+
+# Miscellaneous

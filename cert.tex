@@ -1,0 +1,99 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%	Skeleton file for generating a populated Certificate of Panel Approval
+%%%%	using the custom LaTeX class IliTech-CerPanApp (version 0.1.0).
+%%%%	This document is intended for use only in Mindanao State University -
+%%%%	Iligan Institute of Technology (aka, IliTech).
+%%%%	
+%%%%	IliTech-CerPanApp
+%%%%	Copyright (C) 2022 - present, Christian Cahig
+%%%%	https://github.com/christian-cahig/IliTech-CerPanApp
+%%%%	
+%%%%	This file is part of a repository under the CC-BY-4.0 license.
+%%%%	See `LICENSE` file in the source directory.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[coet, thesis]{template/cerpanapp}
+% =============================================================================
+% Class options
+% college
+%   Choose one of 'cass', 'ccs', 'ceba', 'ced', 'csm', 'coet', and 'con'.
+%   Choosing 'coet' will use 'Graduate School of Engineering' in the header;
+%   all other options will use 'School of Graduate Studies'.
+% type
+%   Choose one of 'dissertation', 'project', and 'thesis'.
+
+% =============================================================================
+% Full (properly capitalized) title of the work
+\WorkTitle{Philosphiae Naturalis Principia Mathematica}
+
+% =============================================================================
+% Full name of the author
+\WorkAuthor{Author McArthur}
+
+% =============================================================================
+% Spelled-out title of the degree
+\Degree{Master of Science in Electrical Engineering}
+
+% =============================================================================
+% Full name of the advisor
+\WorkAdvisor{John dela Cruz, Ph.D.}
+
+% =============================================================================
+% Full name of the co-advisor
+% Per MSU-IIT custom, at most one co-advisor is allowed for a study.
+% If a co-advisor does not apply, you may simply supply an empty value, i.e.,
+% \WorkCoAdvisor{}.
+\WorkCoAdvisor{Juan dela Cruz, Ph.D.}
+
+% =============================================================================
+% Full names of the non-advising members of the oral examination panel (OEP)
+% Per MSU-IIT mandate, there are at least two non-advising members of the OEP.
+% The LaTeX class supports up to four non-advising members of the OEP.
+% If the third and/or fourth member are not applicable, you may simply supply
+% empty values, i.e., \OralExamPanelistC{} and/or \OralExamPanelistD{}.
+% The combination
+%   \OralExamPanelistC{}
+%   \OralExamPanelistD{John Doe, Ph.D.}
+% will have the same effect as
+%   \OralExamPanelistC{John Doe, Ph.D.}
+%   \OralExamPanelistD{}
+\OralExamPanelistA{Jane dela Cruz, Ph.D., PEE}
+\OralExamPanelistB{Juana dela Cruz, Ph.D.}
+\OralExamPanelistC{Jerome dela Cruz, MSEE}
+\OralExamPanelistD{Josefa dela Cruz, MSEE}
+
+% =============================================================================
+% Full names of the department- and college-level signatories
+% If not supplied, 
+\DeptChairperson{Cher Horowitz, J.D.}
+\DeptGradCoordinator{Deftones Toleran, Ph.D.}
+\CollegeGradCoordinator{Pierre Teilhard de Chardin, S.J.}
+\CollegeDean{Mamshei Laramos, Ph.D.}
+
+% =============================================================================
+% Document proper
+\begin{document}
+    \begin{PanelApproval}
+        \PutHeader
+        \PutCertificateTitle
+        \vskip 1em
+
+        \noindent
+        \PutRecommendation
+        \vskip 2em
+
+        \PutOralExamPanelists
+        \vskip 2em
+
+        \PutAdvisors
+        \vskip 2em
+
+        \noindent
+        \PutApproval
+        \vskip 2em
+
+        \PutGradSchoolSignatories
+    \end{PanelApproval}
+
+\end{document}
+
