@@ -124,7 +124,7 @@
 }
 
 \newcommand{\PutRecommendation}{%
-	The \@WorkType attached hereto,
+	The {\@WorkType\xspace} attached hereto,
 	entitled {\bfseries \emph{\@WorkTitle}\xspace},
 	prepared and submitted by {\bfseries \emph{\@WorkAuthor\xspace}}
 	in partial fulfilment of the requirements for the degree {\bfseries \emph{\@Degree}\xspace},
@@ -132,8 +132,8 @@
 }
 
 \newcommand{\PutApproval}{%
-	This \@WorkType is approved in partial fulfilment of the requirements for the degree
-	{\bfseries \emph{\@Degree}\xspace}.%
+	This {\@WorkType\xspace} is approved in partial fulfilment of the requirements
+	for the degree {\bfseries \emph{\@Degree}\xspace}.%
 }
 
 \newcommand{\PutOralExamPanelists}{%
