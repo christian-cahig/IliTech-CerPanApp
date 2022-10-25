@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%	IliTech-CerPanApp (version 0.1.0)
+%%%%	IliTech-CerPanApp (version 0.1.1)
 %%%%	A custom LaTeX class for generating the Certificate of Panel Approval
 %%%%	for use in Mindanao State University - Iligan Institute of Technology
 %%%%
