@@ -222,11 +222,11 @@
 			{\small Department Graduate Program Coordinator}
 		\end{center}
 	\end{multicols}
-	\vskip 1.3em
+	\vskip 2em
 	\begin{center}
 		{\bfseries \underline{\@CollegeGradCoordinator}} \\
 		{\small College Graduate Program Coordinator} \\
-		\vskip 2em
+		\vskip 3em
 		{\noindent \bfseries \underline{\@CollegeDean}} \\
 		{\small Dean, \@College}
 	\end{center}%
@@ -248,7 +248,6 @@
 		\PutAdvisors
 		\vskip 2em
 
-		\vfill
 		\noindent
 		\PutApproval
 		\vskip 2em
