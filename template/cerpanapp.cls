@@ -130,8 +130,8 @@
 	{\footnotesize \UniversityAddress} \\
 
 	\noindent
-	{\small \bfseries \@College} \\
-	{\small \bfseries \@GradSchool} \\[-1em]
+	{\normalsize \bfseries \@College} \\
+	{\normalsize \bfseries \@GradSchool} \\[-1em]
 
 	\noindent
 	\line(1,0){\textwidth}%
