@@ -39,23 +39,41 @@
 
 \newcommand{\University}{Mindanao State University -- Iligan Institute of Technology}
 \newcommand{\UniversityAddress}{Andres Bonifacio Avenue, Tibanga, 9200 Iligan City}
-\newcommand{\College}{College of Engineering and Technology}
-\newcommand{\GradSchool}{School of Graduate Studies}
+\newcommand{\SGS}{School of Graduate Studies}
+\newcommand{\GSE}{Graduate School of Engineering}
 
 %% OPTIONS
 \DeclareOption{college}{ \ClassWarning{IliTech-CerPanApp}{%
 	Invalid college name. Choose one of 'cass', 'ccs', 'ceba', 'ced', 'csm', 'coet', and 'con'.%
 } }
-\DeclareOption{cass}{ \renewcommand{\College}{College of Arts and Social Sciences} }
-\DeclareOption{ccs}{ \renewcommand{\College}{College of Computer Studies} }
-\DeclareOption{ceba}{ \renewcommand{\College}{College of Economics, Business, and Accountancy} }
-\DeclareOption{ced}{ \renewcommand{\College}{College of Education} }
-\DeclareOption{csm}{ \renewcommand{\College}{College of Science and Mathematics} }
-\DeclareOption{coet}{%
-	\renewcommand{\College}{College of Engineering and Technology}
-	\renewcommand{\GradSchool}{Graduate School of Engineering}
+\DeclareOption{cass}{%
+	\gdef\@College{College of Arts and Social Sciences}%
+	\gdef\@GradSchool{\SGS}%
 }
-\DeclareOption{con}{ \renewcommand{\College}{College of Nursing} }
+\DeclareOption{ccs}{%
+	\gdef\@College{College of Computer Studies}%
+	\gdef\@GradSchool{\SGS}%
+}
+\DeclareOption{ceba}{%
+	\gdef\@College{College of Economics, Business, and Accountancy}%
+	\gdef\@GradSchool{\SGS}%
+}
+\DeclareOption{ced}{%
+	\gdef\@College{College of Education}%
+	\gdef\@GradSchool{\SGS}%
+}
+\DeclareOption{csm}{%
+	\gdef\@College{College of Science and Mathematics}
+	\gdef\@GradSchool{\SGS}%
+}
+\DeclareOption{coet}{%
+	\gdef\@College{College of Engineering and Technology}%
+	\gdef\@GradSchool{\GSE}%
+}
+\DeclareOption{con}{%
+	\gdef\@College{College of Nursing}%
+	\gdef\@GradSchool{\SGS}%
+}
 
 \DeclareOption{type}{ \ClassWarning{IliTech-CerPanApp}{%
 	Invalid work type. Choose one of 'dissertation', 'project', and 'thesis'.%
@@ -112,8 +130,8 @@
 	{\footnotesize \UniversityAddress} \\
 
 	\noindent
-	{\small \bfseries \MakeUppercase{\College}} \\
-	{\small \bfseries \GradSchool} \\[-1em]
+	{\small \bfseries \@College} \\
+	{\small \bfseries \@GradSchool} \\[-1em]
 
 	\noindent
 	\line(1,0){\textwidth}%
@@ -204,19 +222,37 @@
 			{\small Department Graduate Program Coordinator}
 		\end{center}
 	\end{multicols}
-	\vskip 2em
+	\vskip 1.3em
 	\begin{center}
 		{\bfseries \underline{\@CollegeGradCoordinator}} \\
-		{\small College Graduate Program Coordinator}
-	\end{center}
-	\vskip 2em
-	\begin{multicols}{2}
-		\vfill\null
-		\columnbreak
-		\noindent Approved: \\
-		\begin{center}
-			{\noindent \bfseries \underline{\@CollegeDean}} \\
-			{\small Dean, \College}
-		\end{center}
-	\end{multicols}%
+		{\small College Graduate Program Coordinator} \\
+		\vskip 2em
+		{\noindent \bfseries \underline{\@CollegeDean}} \\
+		{\small Dean, \@College}
+	\end{center}%
+}
+
+\newcommand{\PutStuff}{%
+	\begin{PanelApproval}
+		\PutHeader
+		\PutCertificateTitle
+		\vskip 1em
+
+		\noindent
+		\PutRecommendation
+		\vskip 2em
+
+		\PutOralExamPanelists
+		\vskip 2em
+
+		\PutAdvisors
+		\vskip 2em
+
+		\vfill
+		\noindent
+		\PutApproval
+		\vskip 2em
+
+		\PutGradSchoolSignatories
+	\end{PanelApproval}
 }
