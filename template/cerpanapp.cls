@@ -204,7 +204,7 @@
 		\ifthenelse{ \equal{\@WorkCoAdvisor}{} }{\vfill\null}{%
 			\begin{center}
 				{\noindent \bfseries \underline{\@WorkCoAdvisor}} \\
-				{\small Advisor}
+				{\small Co-advisor}
 			\end{center}%
 		}
 	\end{multicols}%
