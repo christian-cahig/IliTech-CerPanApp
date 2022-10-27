@@ -6,7 +6,7 @@ as required of special projects, theses, and dissertations
 in Mindanao State University - Iligan Institute of Technology.
 
 For the class definition, please see [`template/cerpanapp.cls`](./template/cerpanapp.cls).
-To get started, please refer to the template file [`cert.tex`](./cert.tex).
+To get started, please refer to the starter file [`cert.tex`](./cert.tex).
 
 ## Notes
 
@@ -14,6 +14,12 @@ To get started, please refer to the template file [`cert.tex`](./cert.tex).
 from the [KOMA-Script bundle](https://ctan.org/pkg/koma-script).
 It has been developed and tested on a local Windows 10 machine
 with [TeX Live](https://www.tug.org/texlive/) version 2022.
+
+An Overleaf project template,
+entitled *MSU-IIT Certificate of Panel Approval*,
+is also available.
+Due to Overleaf policy, it may take a day or two before the template reflects
+the latest `IliTech-CerPanApp` version.
 
 ## License
 
