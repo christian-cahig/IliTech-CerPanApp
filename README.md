@@ -16,7 +16,8 @@ It has been developed and tested on a local Windows 10 machine
 with [TeX Live](https://www.tug.org/texlive/) version 2022.
 
 An Overleaf project template,
-entitled *MSU-IIT Certificate of Panel Approval*,
+entitled
+[*MSU-IIT Certificate of Panel Approval*](https://www.overleaf.com/latex/templates/msu-iit-certificate-of-panel-approval/hhwtmkbmdrnt),
 is also available.
 Due to Overleaf policy, it may take a day or two before the template reflects
 the latest `IliTech-CerPanApp` version.
